@@ -1,6 +1,6 @@
 {
   "name": "runkeeper-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "RunKeeper HealthGraph API Client Library for Node.js",
   "author": "Michael Owens <mk@mowens.com> (http://mowens.com/)",
   "repository": {
@@ -8,6 +8,9 @@
     "url": "http://github.com/mowens/runkeeper-js.git"
   },
   "main": "./lib/runkeeper",
+  "dependencies": {
+    "request": ">= 1.9.0"
+  },
   "engines": { "node": ">= 0.4.0" },
   "keywords": ["runkeeper", "healthgraph", "oauth", "auth", "authentication", "api", "wrapper", "fitness"]
 }
