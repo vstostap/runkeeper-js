@@ -5,7 +5,11 @@ This is an API Client and Wrapper for the [RunKeeper Health Graph API](http://de
 
 ## Installation
 
-- `runkeeper-js` is available on NPM and maintained in sync with this Github branch. Just include it in your dependencies via `package.json` and `npm install` in your app's root directory to install it in your `node_modules` directory.
+The original version of `runkeeper-js` is available on NPM. This fork is not, so to install the client (you really do not want to do that, yet...) either git clone to `node_modules`, or add:
+
+    "runkeeper-js": "git+ssh://git@github.com:matiasdoyle/runkeeper-js.git"
+
+to your `package.json` and run `npm i`.
 
 ## Creating a client
 
