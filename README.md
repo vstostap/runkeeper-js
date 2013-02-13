@@ -47,10 +47,10 @@ var options = exports.options = {
 };
 
 // Require RunKeeper.js
-var runkeeper = require('runkeeper-js');
+var Runkeeper = require('runkeeper-js');
 
 // Create a Client
-var client = new runkeeper.HealthGraph(options);
+var client = new Runkeeper(options);
 
 ```
 
@@ -71,7 +71,7 @@ client.getNewToken(authorization_code, function(err, access_token) {
 	// Usually, you'll want to store the access_token for later use so that you can set it upon initialization of the Client
 	
 	// Example: Get user's Profile information
-	client.profile(function(err, reply) {
+	client.apiCall({ resource: 'profile' }, function(err, reply) {
 		if(err) { console.log(err); }
 		
 		// Do whatever you need with the API's reply.
