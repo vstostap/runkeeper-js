@@ -10,6 +10,7 @@
   "main": "./lib/runkeeper",
   "dependencies": {
     "request": ">= 1.9.0",
+    "tokenthrottle": "^1.3.0",
     "underscore": "~1.4.4"
   },
   "engines": {
